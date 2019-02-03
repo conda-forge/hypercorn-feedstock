@@ -1,6 +1,6 @@
 {% set name = "Hypercorn" %}
-{% set version = "0.4.6" %}
-{% set sha256 = "84c53ef8248a4067c6ec0b7c9a8a850eed2c85e660b1afdaac37f4f8cc8420f2" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "d35853214408b31bce3220847fd3d16847086ec083123e725acbf36fdcf39fde" %}
 
 package:
   name: {{ name|lower }}
