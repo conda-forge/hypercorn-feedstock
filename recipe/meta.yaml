@@ -12,7 +12,6 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
@@ -21,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7.0
+    - python >=3.6
     - setuptools >=40.6.2
 
   run:
-    - python >=3.6.1
+    - python >=3.6
     - h11 >=0.8.1
     - h2 >=3.0.1
     - pytoml >=0.1.20
