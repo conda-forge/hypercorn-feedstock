@@ -22,8 +22,9 @@ uvloop, or trio worker types.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/hypercorn-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/hypercorn-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/hypercorn-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/hypercorn-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/hypercorn-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/hypercorn-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/hypercorn-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/hypercorn-feedstock/branch/master)
 
 Current release info
 ====================
