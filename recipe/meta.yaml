@@ -16,15 +16,15 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - hypercorn = hypercorn.__main__:main
+  skip: true  # [py < 36]
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
     - setuptools
-
   run:
-    - python >=3.6
+    - python
     - h11 >=0.8.1
     - h2 >=3.0.1
     - pytoml >=0.1.20
