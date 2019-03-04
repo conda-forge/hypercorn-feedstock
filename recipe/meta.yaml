@@ -1,6 +1,6 @@
 {% set name = "Hypercorn" %}
-{% set version = "0.5.2" %}
-{% set sha256 = "d35853214408b31bce3220847fd3d16847086ec083123e725acbf36fdcf39fde" %}
+{% set version = "0.5.3" %}
+{% set sha256 = "97bad5887ff543e2dff0a584d1a084e702789a26df5c8fb027ac1efab32274c5" %}
 
 package:
   name: {{ name|lower }}
@@ -12,20 +12,19 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - hypercorn = hypercorn.__main__:main
+  skip: true  # [py < 36]
 
 requirements:
   host:
     - pip
-    - python >=3.7.0
-    - setuptools >=40.6.2
-
+    - python
+    - setuptools
   run:
-    - python >=3.6.1
+    - python
     - h11 >=0.8.1
     - h2 >=3.0.1
     - pytoml >=0.1.20
