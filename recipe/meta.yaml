@@ -16,7 +16,7 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - hypercorn = hypercorn.__main__:main
-  skip: true  # [py < 36]
+  skip: true  # [py < 37]
 
 requirements:
   host:
