@@ -27,11 +27,11 @@ requirements:
     - python
     - h11 >=0.8.1
     - h2 >=3.1.0
-    - pytoml >=0.1.20
+    - toml >=0.10.0
     - typing_extensions >=3.6.6
     - wsproto >=0.14.0
     - uvloop >=0.11.3  # [unix]
-    - trio >=0.9.0
+    - trio >=0.11.0
 
 test:
   imports:
