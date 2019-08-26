@@ -1,6 +1,6 @@
 {% set name = "Hypercorn" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "f3ab33ee77d3ea68bf75a94ca5633a5a01134aedf1a6c9d05a70339022d6c8a3" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "ba8c3b1600d711127aba87ea8f8f68b1cc9971deffa9b0cc50702c93a6daea93" %}
 
 package:
   name: {{ name|lower }}
@@ -27,6 +27,7 @@ requirements:
     - python
     - h11 >=0.8.1
     - h2 >=3.1.0
+    - priority
     - toml >=0.10.0
     - typing_extensions >=3.6.6
     - wsproto >=0.14.0
