@@ -182,4 +182,5 @@ Feedstock Maintainers
 
 * [@dhirschfeld](https://github.com/dhirschfeld/)
 * [@maxyme](https://github.com/maxyme/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
