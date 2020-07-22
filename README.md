@@ -5,7 +5,7 @@ Home: https://gitlab.com/pgjones/hypercorn/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A ASGI Server based on Hyper libraries and inspired by Gunicorn.
 
