@@ -5,9 +5,13 @@ Home: https://gitlab.com/pgjones/hypercorn/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hypercorn-feedstock/blob/master/LICENSE.txt)
 
 Summary: A ASGI Server based on Hyper libraries and inspired by Gunicorn.
+
+Development: https://gitlab.com/pgjones/hypercorn/
+
+Documentation: https://pgjones.gitlab.io/hypercorn/
 
 Hypercorn is an ASGI web server based on the sans-io hyper, h11, h2,
 and wsproto libraries and inspired by Gunicorn. Hypercorn supports HTTP/1, HTTP/2,
