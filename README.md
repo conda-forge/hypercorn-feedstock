@@ -3,15 +3,13 @@ About hypercorn-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hypercorn-feedstock/blob/main/LICENSE.txt)
 
-Home: https://gitlab.com/pgjones/hypercorn/
+Home: https://github.com/pgjones/hypercorn
 
 Package license: MIT
 
 Summary: A ASGI Server based on Hyper libraries and inspired by Gunicorn.
 
-Development: https://gitlab.com/pgjones/hypercorn/
-
-Documentation: https://pgjones.gitlab.io/hypercorn/
+Documentation: https://hypercorn.readthedocs.io
 
 Hypercorn is an ASGI web server based on the sans-io hyper, h11, h2,
 and wsproto libraries and inspired by Gunicorn. Hypercorn supports HTTP/1, HTTP/2,
@@ -23,128 +21,11 @@ Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4861&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hypercorn-feedstock?branchName=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -155,6 +36,9 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn-green.svg)](https://anaconda.org/conda-forge/hypercorn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn.svg)](https://anaconda.org/conda-forge/hypercorn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn.svg)](https://anaconda.org/conda-forge/hypercorn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn.svg)](https://anaconda.org/conda-forge/hypercorn) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--with--h3-green.svg)](https://anaconda.org/conda-forge/hypercorn-with-h3) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-with-h3.svg)](https://anaconda.org/conda-forge/hypercorn-with-h3) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-with-h3.svg)](https://anaconda.org/conda-forge/hypercorn-with-h3) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-with-h3.svg)](https://anaconda.org/conda-forge/hypercorn-with-h3) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--with--trio-green.svg)](https://anaconda.org/conda-forge/hypercorn-with-trio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-with-trio.svg)](https://anaconda.org/conda-forge/hypercorn-with-trio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-with-trio.svg)](https://anaconda.org/conda-forge/hypercorn-with-trio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-with-trio.svg)](https://anaconda.org/conda-forge/hypercorn-with-trio) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--with--uvloop-green.svg)](https://anaconda.org/conda-forge/hypercorn-with-uvloop) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-with-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-with-uvloop) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-with-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-with-uvloop) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-with-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-with-uvloop) |
 
 Installing hypercorn
 ====================
@@ -166,16 +50,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `hypercorn` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `hypercorn, hypercorn-with-h3, hypercorn-with-trio, hypercorn-with-uvloop` can be installed with `conda`:
 
 ```
-conda install hypercorn
+conda install hypercorn hypercorn-with-h3 hypercorn-with-trio hypercorn-with-uvloop
 ```
 
 or with `mamba`:
 
 ```
-mamba install hypercorn
+mamba install hypercorn hypercorn-with-h3 hypercorn-with-trio hypercorn-with-uvloop
 ```
 
 It is possible to list all of the versions of `hypercorn` available on your platform with `conda`:
@@ -222,7 +106,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
@@ -270,6 +154,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@dhirschfeld](https://github.com/dhirschfeld/)
 * [@maxyme](https://github.com/maxyme/)
 * [@synapticarbors](https://github.com/synapticarbors/)

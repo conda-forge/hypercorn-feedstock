@@ -55,7 +55,7 @@ outputs:
   - name: hypercorn-with-h3
     build:
       noarch: generic
-    dependencies:
+    requirements:
       run:
         - {{ pin_subpackage("hypercorn", max_pin="x.x.x") }}
         - aioquic
@@ -71,7 +71,7 @@ outputs:
   - name: hypercorn-with-trio
     build:
       noarch: generic
-    dependencies:
+    requirements:
       run:
         - {{ pin_subpackage("hypercorn", max_pin="x.x.x") }}
         - uvloop
@@ -87,7 +87,7 @@ outputs:
   - name: hypercorn-with-uvloop
     build:
       noarch: generic
-    dependencies:
+    requirements:
       run:
         - {{ pin_subpackage("hypercorn", max_pin="x.x.x") }}
         - uvloop
