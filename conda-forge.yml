@@ -1,5 +1,5 @@
-provider:
-  win: azure
+bot:
+  inspection: hint-all
 conda_forge_output_validation: true
 conda_build:
   pkg_format: '2'
