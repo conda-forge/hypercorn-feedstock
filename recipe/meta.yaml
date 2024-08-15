@@ -74,7 +74,7 @@ outputs:
     requirements:
       run:
         - {{ pin_subpackage("hypercorn", max_pin="x.x.x") }}
-        - uvloop
+        - trio
     test:
       requires:
         - pip
@@ -95,7 +95,7 @@ outputs:
       requires:
         - pip
       imports:
-        - hypercorn.trio
+        - hypercorn.uvloop
       commands:
         - pip check
         - hypercorn --help
