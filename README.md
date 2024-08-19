@@ -36,9 +36,10 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn-green.svg)](https://anaconda.org/conda-forge/hypercorn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn.svg)](https://anaconda.org/conda-forge/hypercorn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn.svg)](https://anaconda.org/conda-forge/hypercorn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn.svg)](https://anaconda.org/conda-forge/hypercorn) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--with--h3-green.svg)](https://anaconda.org/conda-forge/hypercorn-with-h3) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-with-h3.svg)](https://anaconda.org/conda-forge/hypercorn-with-h3) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-with-h3.svg)](https://anaconda.org/conda-forge/hypercorn-with-h3) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-with-h3.svg)](https://anaconda.org/conda-forge/hypercorn-with-h3) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--with--trio-green.svg)](https://anaconda.org/conda-forge/hypercorn-with-trio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-with-trio.svg)](https://anaconda.org/conda-forge/hypercorn-with-trio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-with-trio.svg)](https://anaconda.org/conda-forge/hypercorn-with-trio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-with-trio.svg)](https://anaconda.org/conda-forge/hypercorn-with-trio) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--with--uvloop-green.svg)](https://anaconda.org/conda-forge/hypercorn-with-uvloop) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-with-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-with-uvloop) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-with-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-with-uvloop) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-with-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-with-uvloop) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--all-green.svg)](https://anaconda.org/conda-forge/hypercorn-all) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-all.svg)](https://anaconda.org/conda-forge/hypercorn-all) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-all.svg)](https://anaconda.org/conda-forge/hypercorn-all) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-all.svg)](https://anaconda.org/conda-forge/hypercorn-all) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--h3-green.svg)](https://anaconda.org/conda-forge/hypercorn-h3) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-h3.svg)](https://anaconda.org/conda-forge/hypercorn-h3) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-h3.svg)](https://anaconda.org/conda-forge/hypercorn-h3) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-h3.svg)](https://anaconda.org/conda-forge/hypercorn-h3) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--trio-green.svg)](https://anaconda.org/conda-forge/hypercorn-trio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-trio.svg)](https://anaconda.org/conda-forge/hypercorn-trio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-trio.svg)](https://anaconda.org/conda-forge/hypercorn-trio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-trio.svg)](https://anaconda.org/conda-forge/hypercorn-trio) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hypercorn--uvloop-green.svg)](https://anaconda.org/conda-forge/hypercorn-uvloop) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hypercorn-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-uvloop) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hypercorn-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-uvloop) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hypercorn-uvloop.svg)](https://anaconda.org/conda-forge/hypercorn-uvloop) |
 
 Installing hypercorn
 ====================
@@ -50,16 +51,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `hypercorn, hypercorn-with-h3, hypercorn-with-trio, hypercorn-with-uvloop` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `hypercorn, hypercorn-all, hypercorn-h3, hypercorn-trio, hypercorn-uvloop` can be installed with `conda`:
 
 ```
-conda install hypercorn hypercorn-with-h3 hypercorn-with-trio hypercorn-with-uvloop
+conda install hypercorn hypercorn-all hypercorn-h3 hypercorn-trio hypercorn-uvloop
 ```
 
 or with `mamba`:
 
 ```
-mamba install hypercorn hypercorn-with-h3 hypercorn-with-trio hypercorn-with-uvloop
+mamba install hypercorn hypercorn-all hypercorn-h3 hypercorn-trio hypercorn-uvloop
 ```
 
 It is possible to list all of the versions of `hypercorn` available on your platform with `conda`:
