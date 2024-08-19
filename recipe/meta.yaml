@@ -57,7 +57,7 @@ test:
 outputs:
   - name: hypercorn
 
-  - name: hypercorn-with-h3
+  - name: hypercorn-h3
     build:
       noarch: generic
     requirements:
@@ -73,7 +73,7 @@ outputs:
         - pip check
         - hypercorn --help
 
-  - name: hypercorn-with-trio
+  - name: hypercorn-trio
     build:
       noarch: generic
     requirements:
@@ -89,7 +89,7 @@ outputs:
         - pip check
         - hypercorn --help
 
-  - name: hypercorn-with-uvloop
+  - name: hypercorn-uvloop
     build:
       noarch: generic
     requirements:
@@ -105,14 +105,14 @@ outputs:
         - pip check
         - hypercorn --help
 
-  - name: hypercorn-with-all
+  - name: hypercorn-all
     build:
       noarch: generic
     requirements:
       run:
-        - {{ pin_subpackage("hypercorn-with-h3", max_pin="x.x.x") }}
-        - {{ pin_subpackage("hypercorn-with-trio", max_pin="x.x.x") }}
-        - {{ pin_subpackage("hypercorn-with-uvloop", max_pin="x.x.x") }}
+        - {{ pin_subpackage("hypercorn-h3", max_pin="x.x.x") }}
+        - {{ pin_subpackage("hypercorn-trio", max_pin="x.x.x") }}
+        - {{ pin_subpackage("hypercorn-uvloop", max_pin="x.x.x") }}
         - {{ pin_subpackage("hypercorn", max_pin="x.x.x") }}
     test:
       source_files:
