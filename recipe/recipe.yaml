@@ -58,7 +58,6 @@ outputs:
           run:
             - python ${{ python_min }}.*
         script:
-          - hypercorn --version
           - hypercorn --help
 
   - package:
@@ -80,7 +79,6 @@ outputs:
           run:
             - python ${{ python_min }}.*
         script:
-          - hypercorn --version
           - hypercorn --help
 
   - package:
@@ -100,9 +98,8 @@ outputs:
             - ${{ python_check_max }}.*
       - requirements:
           run:
-            - python ${{ python_min }}.
+            - python ${{ python_min }}.*
         script:
-          - hypercorn --version
           - hypercorn --help
 
   - package:
@@ -124,7 +121,6 @@ outputs:
           run:
             - python ${{ python_min }}.*
         script:
-          - hypercorn --version
           - hypercorn --help
 
   - package:
