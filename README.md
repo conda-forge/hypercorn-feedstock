@@ -9,13 +9,12 @@ Package license: MIT
 
 Summary: A ASGI Server based on Hyper libraries and inspired by Gunicorn.
 
-Documentation: https://hypercorn.readthedocs.io
+Documentation: https://hypercorn.readthedocs.io/
 
 Hypercorn is an ASGI web server based on the sans-io hyper, h11, h2,
 and wsproto libraries and inspired by Gunicorn. Hypercorn supports HTTP/1, HTTP/2,
 and websockets and the ASGI 2 specification. Hypercorn can utilise asyncio,
 uvloop, or trio worker types.
-
 
 Current build status
 ====================
