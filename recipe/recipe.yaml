@@ -10,12 +10,8 @@ recipe:
   version: ${{ version }}
 
 source:
-  - url: https://pypi.org/packages/source/h/hypercorn/hypercorn-${{ version }}.tar.gz
-    sha256: d63267548939c46b0247dc8e5b45a9947590e35e64ee73a23c074aa3cf88e9da
-    target_directory: dist
-  - url: https://github.com/pgjones/hypercorn/archive/refs/tags/${{ version }}.tar.gz
-    sha256: 094c4b85d69aeb9a79e28e8f8c5f3d87dbd8c1e6668c085ff08104f02fde0497
-    target_directory: src
+  url: https://pypi.org/packages/source/h/hypercorn/hypercorn-${{ version }}.tar.gz
+  sha256: d63267548939c46b0247dc8e5b45a9947590e35e64ee73a23c074aa3cf88e9da
 
 build:
   number: 0
@@ -27,7 +23,6 @@ outputs:
     build:
       noarch: python
       script:
-        - cd dist
         - ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation --disable-pip-version-check
       python:
         entry_points:
@@ -145,7 +140,7 @@ outputs:
     tests:
       - files:
           source:
-            - src/tests/
+            - tests/
         requirements:
           run:
             - coverage
@@ -158,13 +153,12 @@ outputs:
             - pytest-trio
             - python ${{ python_min }}.*
         script:
-          - cd src
           - coverage run --source=hypercorn --branch -m pytest -vv --tb=long --color=yes
           - coverage report --show-missing --skip-covered --fail-under=69
 
 about:
   license: MIT
-  license_file: dist/LICENSE
+  license_file: LICENSE
   summary: A ASGI Server based on Hyper libraries and inspired by Gunicorn.
   description: |
     Hypercorn is an ASGI web server based on the sans-io hyper, h11, h2,
